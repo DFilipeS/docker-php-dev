@@ -4,6 +4,13 @@ This repository contains a basic configuration for a development environment for
 
 Inspired by this [Master Zend Framework blog post](http://www.masterzendframework.com/docker-development-environment/).
 
+## Contents
+
+* [`nginx:latest`](https://hub.docker.com/_/nginx/)
+* [`php:5.6-fpm`](https://hub.docker.com/_/php/)
+* [`mysql:latest`](https://hub.docker.com/_/mysql/)
+* [`phpmyadmin/phpmyadmin:latest`](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
+
 ## Starting the environment
 
 * `$ docker-compose up`
@@ -25,6 +32,12 @@ It is useful to know what containers are running, their names, expose ports, ...
 Sometimes it might be useful to access the actual container (for example, to import a database).
 
 * `$ docker exec -i -t YOUR_CONTAINER_NAME /bin/bash`
+
+## Accessing phpMyAdmin
+
+phpMyAdmin is served by default in the port 8090.
+
+* `http://localhost:8090`
 
 ## Using a different PHP version
 
