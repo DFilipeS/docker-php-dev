@@ -31,3 +31,10 @@ services:
             MYSQL_DATABASE: database_name
             MYSQL_USER: user
             MYSQL_PASSWORD: password
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        ports: 
+            - 8090:80
+        environment:
+            PMA_HOST: mysql
+            PMA_PORT: 3306
