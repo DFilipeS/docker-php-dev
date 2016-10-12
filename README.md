@@ -4,6 +4,16 @@ This repository contains a basic configuration for a development environment for
 
 Inspired by this [Master Zend Framework blog post](http://www.masterzendframework.com/docker-development-environment/).
 
+## Index
+
+* [Contents](#contents) 
+* [Starting the environment](#starting-the-environment) 
+* [Getting information about the containers](#getting-information-about-the-containers) 
+* [SSHing into containers](#sshing-into-containers)
+* [Accessing phpMyAdmin](#accessing-phpmyadmin)
+* [Using a different PHP version](#using-a-different-php-version)
+* [See volumes and removing them](#see-volumes-and-removing-them)
+ 
 ## Contents
 
 * [`nginx:latest`](https://hub.docker.com/_/nginx/)
