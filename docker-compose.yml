@@ -1,0 +1,33 @@
+version: '2'
+
+volumes:
+    database_data:
+        driver: local
+
+services:
+    nginx:
+        image: nginx:latest
+        ports:
+            - 8080:80
+        volumes:
+            - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+        volumes_from:
+            - php
+    php:
+        build: ./docker/php/
+        expose:
+            - 9000
+        volumes:
+            - .:/var/www/html
+    mysql:
+        image: mysql:latest
+        expose:
+            - 3306
+        volumes:
+            - database_data:/var/lib/mysql
+            - ./docker/mysql:/home
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: database_name
+            MYSQL_USER: user
+            MYSQL_PASSWORD: password
