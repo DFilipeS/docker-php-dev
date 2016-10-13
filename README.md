@@ -2,7 +2,7 @@
 
 This repository contains a basic configuration for a development environment for a typical AMP stack (Nginx, MySQL and PHP). Project files stored in the `public` folder are served by Nginx.
 
-Inspired by this [Master Zend Framework blog post](http://www.masterzendframework.com/docker-development-environment/).
+Based on [Master Zend Framework blog post](http://www.masterzendframework.com/docker-development-environment/).
 
 ## Index
 
