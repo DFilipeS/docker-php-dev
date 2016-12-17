@@ -17,7 +17,7 @@ Based on [Master Zend Framework blog post](http://www.masterzendframework.com/do
 ## Contents
 
 * [`nginx:latest`](https://hub.docker.com/_/nginx/)
-* [`php:5.6-fpm`](https://hub.docker.com/_/php/)
+* [`php:7.1-fpm`](https://hub.docker.com/_/php/)
 * [`mysql:latest`](https://hub.docker.com/_/mysql/)
 * [`phpmyadmin/phpmyadmin:latest`](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
 
